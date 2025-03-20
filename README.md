@@ -6,9 +6,12 @@ Folder Structure:
 
 /Customize Umbrella
 │── /images           # Stores umbrella images and icons
+
 │── /public              # Stylesheets
     │── index.html        # Main HTML file
-│   ├── styles.css    # Main stylesheet
+    ├── styles.css    # Main stylesheet
+
 │── /src               # JavaScript files
-│   ├── script.js     # Main script for functionality
+    ├── script.js     # Main script for functionality
+    
 │── README.md         # Project documentation
