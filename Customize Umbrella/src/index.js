@@ -128,3 +128,4 @@ function toggleLoader(show) {
         });
     }
 }
+
