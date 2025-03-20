@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d5edfb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.umbrella-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+@keyframes rotate-stop {
+    0% { transform: rotate(0deg); }
+    40% { transform: rotate(180deg); }
+    50% { transform: rotate(180deg); }
+    90% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    display: none;
+    animation: rotate-stop 2s linear infinite;
+}
+
+.logo-preview {
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 20%;
+    max-height: 15%;
+    height: 50px;
+    width: 90px;
+    display: none;
+}
+
+.umbrella {
+    width: 80%;
+    max-width: 500px;
+}
+
+.customizer {
+    flex: 1;
+    text-align: left;
+    margin-left: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin: 30px;
+    margin-left: 80px;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.color-option.active-color {
+    transform: scale(1);
+}
+
+.upload-btn {
+    background-color: #0099ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 420px;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+.upload-icon {
+    position: absolute;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    filter: invert(1);
+}
